@@ -1,0 +1,38 @@
+let a:number;
+a=10;
+a=20.5;
+let b='10';
+console.log('NUMBER DATA TYPE');
+console.log(parseInt(b));
+console.log(typeof a,a);
+let c:string;
+c='honey';
+console.log("STRING DATA TYPE");
+console.log(typeof c,c);
+console.log("BOOLEAN DATA TYPE");
+let d:boolean=false;
+console.log(!d,typeof d);
+let e:Array<String>;
+e=['a','b','c','d'];
+console.log("ARRAY DATA TYPE");
+console.log(e,typeof e);
+let f:Array<number>;
+f=[1,2,3,4,5];
+console.log(f);
+let g=f.filter((num)=>num>=2);
+console.log(g);
+let h=f.reduce((acc,num)=>acc+num);
+console.log("sum of array "+h);
+console.log("ENUM DATA TYPE");
+let i:[number,number];
+i=[10,20];
+console.log(i);
+enum days{'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'};
+let j:days=days.Sunday;
+console.log(typeof i,j);
+enum edays{'Sunday'=1,'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'};
+let k:edays=edays.Sunday;
+console.log(typeof edays,k,edays);
+console.log(edays['Sunday']);
+
+
